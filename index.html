@@ -1,0 +1,729 @@
+ChatGPT dijo:
+Claro. Te dejo una versión bastante elaborada, con HTML y CSS completamente separados. Es una página educativa sobre sistemas eléctricos, con portada, conceptos, fórmulas, tipos de circuitos, tarjetas informativas y una sección visual de un circuito.
+
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página educativa sobre física y sistemas eléctricos">
+    <title>Sistemas Eléctricos | Física</title>
+
+    <!-- Fuente de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span>FÍSICA<span class="logo-highlight">LAB</span></span>
+        </div>
+
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#conceptos">Conceptos</a>
+            <a href="#formulas">Fórmulas</a>
+            <a href="#circuitos">Circuitos</a>
+            <a href="#aplicaciones">Aplicaciones</a>
+        </nav>
+
+        <a href="#contacto" class="nav-button">Explorar</a>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    ⚡ FÍSICA • ELECTRICIDAD
+                </div>
+
+                <h1>
+                    SISTEMAS
+                    <span>ELÉCTRICOS</span>
+                </h1>
+
+                <p class="hero-description">
+                    Descubre cómo funciona la electricidad, cómo se comportan
+                    los circuitos y cuáles son las leyes fundamentales que
+                    permiten comprender los sistemas eléctricos.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#conceptos" class="primary-button">
+                        Comenzar aprendizaje →
+                    </a>
+
+                    <a href="#formulas" class="secondary-button">
+                        Ver fórmulas
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+                        <strong>04</strong>
+                        <span>Conceptos clave</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>03</strong>
+                        <span>Leyes principales</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>∞</strong>
+                        <span>Aplicaciones</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="electric-orb orb-one"></div>
+            <div class="electric-orb orb-two"></div>
+
+        </section>
+
+
+        <!-- ================= INTRODUCCIÓN ================= -->
+
+        <section class="intro-section">
+
+            <div class="section-label">
+                01 / INTRODUCCIÓN
+            </div>
+
+            <div class="intro-grid">
+
+                <div class="intro-title">
+                    <h2>
+                        ¿Qué son los
+                        <span>sistemas eléctricos?</span>
+                    </h2>
+                </div>
+
+                <div class="intro-text">
+                    <p>
+                        Un sistema eléctrico es un conjunto de elementos
+                        conectados entre sí que permiten producir, transportar,
+                        controlar y utilizar la energía eléctrica.
+                    </p>
+
+                    <p>
+                        Estos sistemas están presentes en prácticamente todos
+                        los aspectos de nuestra vida moderna: hogares,
+                        industrias, medios de transporte, dispositivos
+                        electrónicos y sistemas de comunicación.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONCEPTOS ================= -->
+
+        <section id="conceptos" class="concepts-section">
+
+            <div class="section-header">
+                <div>
+                    <span class="section-label">02 / CONCEPTOS FUNDAMENTALES</span>
+                    <h2>Los pilares de la electricidad</h2>
+                </div>
+
+                <p>
+                    Comprender estas magnitudes es fundamental para analizar
+                    cualquier sistema eléctrico.
+                </p>
+            </div>
+
+
+            <div class="concepts-grid">
+
+                <!-- Tarjeta 1 -->
+                <article class="concept-card">
+
+                    <div class="card-number">01</div>
+
+                    <div class="card-icon">⚡</div>
+
+                    <h3>Voltaje</h3>
+
+                    <p>
+                        El voltaje representa la diferencia de potencial
+                        eléctrico entre dos puntos. Es la fuerza que impulsa
+                        a las cargas eléctricas a través de un circuito.
+                    </p>
+
+                    <div class="formula-small">
+                        V = W / Q
+                    </div>
+
+                    <span class="unit">Unidad: Voltio (V)</span>
+
+                </article>
+
+
+                <!-- Tarjeta 2 -->
+                <article class="concept-card featured">
+
+                    <div class="card-number">02</div>
+
+                    <div class="card-icon">〰</div>
+
+                    <h3>Corriente</h3>
+
+                    <p>
+                        La corriente eléctrica es el movimiento ordenado
+                        de cargas eléctricas a través de un conductor.
+                    </p>
+
+                    <div class="formula-small">
+                        I = Q / t
+                    </div>
+
+                    <span class="unit">Unidad: Amperio (A)</span>
+
+                </article>
+
+
+                <!-- Tarjeta 3 -->
+                <article class="concept-card">
+
+                    <div class="card-number">03</div>
+
+                    <div class="card-icon">Ω</div>
+
+                    <h3>Resistencia</h3>
+
+                    <p>
+                        La resistencia mide la oposición que presenta
+                        un material al paso de la corriente eléctrica.
+                    </p>
+
+                    <div class="formula-small">
+                        R = V / I
+                    </div>
+
+                    <span class="unit">Unidad: Ohmio (Ω)</span>
+
+                </article>
+
+
+                <!-- Tarjeta 4 -->
+                <article class="concept-card">
+
+                    <div class="card-number">04</div>
+
+                    <div class="card-icon">◉</div>
+
+                    <h3>Potencia</h3>
+
+                    <p>
+                        La potencia eléctrica indica la cantidad de energía
+                        eléctrica transformada o utilizada por unidad de tiempo.
+                    </p>
+
+                    <div class="formula-small">
+                        P = V · I
+                    </div>
+
+                    <span class="unit">Unidad: Watt (W)</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LEY DE OHM ================= -->
+
+        <section id="formulas" class="ohm-section">
+
+            <div class="ohm-content">
+
+                <div class="ohm-text">
+
+                    <span class="section-label">03 / LEY FUNDAMENTAL</span>
+
+                    <h2>
+                        La Ley de
+                        <span>Ohm</span>
+                    </h2>
+
+                    <p>
+                        La Ley de Ohm establece una relación fundamental
+                        entre el voltaje, la corriente y la resistencia
+                        presentes en un circuito eléctrico.
+                    </p>
+
+                    <p>
+                        Esta relación permite calcular una de las tres
+                        magnitudes cuando conocemos las otras dos.
+                    </p>
+
+                    <div class="ohm-equation">
+                        V = I × R
+                    </div>
+
+                    <div class="equation-legend">
+
+                        <div>
+                            <strong>V</strong>
+                            <span>Voltaje</span>
+                        </div>
+
+                        <div>
+                            <strong>I</strong>
+                            <span>Corriente</span>
+                        </div>
+
+                        <div>
+                            <strong>R</strong>
+                            <span>Resistencia</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ohm-visual">
+
+                    <div class="triangle">
+
+                        <div class="triangle-top">
+                            V
+                        </div>
+
+                        <div class="triangle-bottom">
+
+                            <span>I</span>
+                            <span>R</span>
+
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Triángulo de la Ley de Ohm
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CIRCUITOS ================= -->
+
+        <section id="circuitos" class="circuits-section">
+
+            <div class="section-header centered">
+
+                <span class="section-label">
+                    04 / CIRCUITOS ELÉCTRICOS
+                </span>
+
+                <h2>
+                    Tipos de circuitos
+                </h2>
+
+                <p>
+                    Los componentes eléctricos pueden conectarse de diferentes
+                    maneras, dando lugar a distintas configuraciones.
+                </p>
+
+            </div>
+
+
+            <div class="circuit-types">
+
+                <!-- SERIE -->
+                <article class="circuit-card">
+
+                    <div class="circuit-header">
+                        <span class="circuit-tag">TIPO 01</span>
+                        <h3>Circuito en serie</h3>
+                    </div>
+
+                    <div class="circuit-diagram">
+
+                        <div class="battery">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="wire"></div>
+
+                        <div class="resistor">R₁</div>
+
+                        <div class="wire"></div>
+
+                        <div class="resistor">R₂</div>
+
+                        <div class="wire"></div>
+
+                        <div class="lamp">💡</div>
+
+                        <div class="wire"></div>
+
+                    </div>
+
+                    <p>
+                        Los componentes están conectados uno después de otro
+                        formando un único camino para la corriente.
+                    </p>
+
+                    <div class="circuit-property">
+                        <strong>I₁ = I₂ = I₃</strong>
+                        <span>La corriente es igual en todos los componentes.</span>
+                    </div>
+
+                </article>
+
+
+                <!-- PARALELO -->
+                <article class="circuit-card">
+
+                    <div class="circuit-header">
+                        <span class="circuit-tag">TIPO 02</span>
+                        <h3>Circuito en paralelo</h3>
+                    </div>
+
+                    <div class="parallel-diagram">
+
+                        <div class="parallel-line top"></div>
+
+                        <div class="parallel-branch branch-one">
+                            <span>R₁</span>
+                        </div>
+
+                        <div class="parallel-branch branch-two">
+                            <span>R₂</span>
+                        </div>
+
+                        <div class="parallel-line bottom"></div>
+
+                    </div>
+
+                    <p>
+                        Los componentes se conectan en diferentes ramas,
+                        permitiendo que la corriente tenga varios caminos.
+                    </p>
+
+                    <div class="circuit-property">
+                        <strong>V₁ = V₂ = V₃</strong>
+                        <span>El voltaje es igual en cada rama.</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FÓRMULAS ================= -->
+
+        <section class="formula-section">
+
+            <div class="formula-container">
+
+                <div class="formula-intro">
+
+                    <span class="section-label">
+                        05 / ECUACIONES
+                    </span>
+
+                    <h2>
+                        Fórmulas esenciales
+                    </h2>
+
+                    <p>
+                        Estas ecuaciones permiten analizar diferentes
+                        características de un sistema eléctrico.
+                    </p>
+
+                </div>
+
+
+                <div class="formula-list">
+
+                    <div class="formula-row">
+
+                        <div class="formula-symbol">V</div>
+
+                        <div class="formula-info">
+                            <h3>Voltaje</h3>
+                            <p>Diferencia de potencial eléctrico</p>
+                        </div>
+
+                        <div class="formula-equation">
+                            V = I × R
+                        </div>
+
+                    </div>
+
+
+                    <div class="formula-row">
+
+                        <div class="formula-symbol">I</div>
+
+                        <div class="formula-info">
+                            <h3>Corriente</h3>
+                            <p>Flujo de carga eléctrica</p>
+                        </div>
+
+                        <div class="formula-equation">
+                            I = V / R
+                        </div>
+
+                    </div>
+
+
+                    <div class="formula-row">
+
+                        <div class="formula-symbol">P</div>
+
+                        <div class="formula-info">
+                            <h3>Potencia</h3>
+                            <p>Energía utilizada por unidad de tiempo</p>
+                        </div>
+
+                        <div class="formula-equation">
+                            P = V × I
+                        </div>
+
+                    </div>
+
+
+                    <div class="formula-row">
+
+                        <div class="formula-symbol">E</div>
+
+                        <div class="formula-info">
+                            <h3>Energía</h3>
+                            <p>Trabajo realizado por un sistema</p>
+                        </div>
+
+                        <div class="formula-equation">
+                            E = P × t
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMPONENTES ================= -->
+
+        <section class="components-section">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-label">
+                        06 / COMPONENTES
+                    </span>
+
+                    <h2>
+                        Elementos de un sistema eléctrico
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="components-grid">
+
+                <div class="component">
+                    <div class="component-icon">🔋</div>
+                    <h3>Fuente</h3>
+                    <p>
+                        Proporciona la energía necesaria para que circule
+                        la corriente eléctrica.
+                    </p>
+                </div>
+
+                <div class="component">
+                    <div class="component-icon">〰️</div>
+                    <h3>Conductores</h3>
+                    <p>
+                        Materiales que permiten el desplazamiento de las
+                        cargas eléctricas.
+                    </p>
+                </div>
+
+                <div class="component">
+                    <div class="component-icon">💡</div>
+                    <h3>Receptores</h3>
+                    <p>
+                        Transforman la energía eléctrica en otras formas
+                        de energía.
+                    </p>
+                </div>
+
+                <div class="component">
+                    <div class="component-icon">🔘</div>
+                    <h3>Interruptores</h3>
+                    <p>
+                        Permiten abrir o cerrar el circuito para controlar
+                        el paso de corriente.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APLICACIONES ================= -->
+
+        <section id="aplicaciones" class="applications-section">
+
+            <div class="applications-content">
+
+                <div class="applications-title">
+
+                    <span class="section-label">
+                        07 / VIDA COTIDIANA
+                    </span>
+
+                    <h2>
+                        La electricidad
+                        <span>está en todas partes.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="applications-grid">
+
+                    <div class="application">
+                        <span>01</span>
+                        <h3>Hogar</h3>
+                        <p>
+                            Iluminación, electrodomésticos, sistemas de
+                            climatización y dispositivos electrónicos.
+                        </p>
+                    </div>
+
+                    <div class="application">
+                        <span>02</span>
+                        <h3>Industria</h3>
+                        <p>
+                            Motores eléctricos, automatización, robots
+                            y sistemas de producción.
+                        </p>
+                    </div>
+
+                    <div class="application">
+                        <span>03</span>
+                        <h3>Transporte</h3>
+                        <p>
+                            Vehículos eléctricos, trenes, sistemas de
+                            señalización y transporte público.
+                        </p>
+                    </div>
+
+                    <div class="application">
+                        <span>04</span>
+                        <h3>Tecnología</h3>
+                        <p>
+                            Computadoras, teléfonos, servidores y
+                            sistemas de comunicación.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MENSAJE FINAL ================= -->
+
+        <section id="contacto" class="final-section">
+
+            <div class="final-box">
+
+                <div class="final-icon">
+                    ⚡
+                </div>
+
+                <span class="section-label">
+                    FÍSICA / SISTEMAS ELÉCTRICOS
+                </span>
+
+                <h2>
+                    Comprender la electricidad
+                    es comprender una parte
+                    fundamental de nuestro mundo.
+                </h2>
+
+                <p>
+                    Desde un pequeño circuito hasta una enorme red eléctrica,
+                    los mismos principios físicos nos ayudan a explicar
+                    cómo funciona la energía que utilizamos todos los días.
+                </p>
+
+                <a href="#inicio" class="primary-button">
+                    Volver al inicio ↑
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ⚡ FÍSICA<span>LAB</span>
+        </div>
+
+        <p>
+            Página educativa sobre física y sistemas eléctricos.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 FísicaLab — Proyecto educativo
+        </p>
+
+    </footer>
+
+</body>
+</html>
